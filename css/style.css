@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   font-family: roboto;
+  overflow-x: hidden;
 }
 
 body {
@@ -18,8 +19,12 @@ body {
   flex-wrap: nowrap;
   color: white;
   font-size: x-large;
-  overflow-x: hidden;
   overflow-y: hidden;
+}
+@media (max-width: 700px){
+  body {
+    font-size: large;
+  }
 }
 
 a {
@@ -33,13 +38,19 @@ main {
   overflow-y: auto;
 }
 
+@media (max-width: 700px) {
+  nav {
+    display: none !IMPORTANT;
+  }
+}
+
 nav {
   background-color: rgba(10, 0, 10, 1);
   flex-grow: 10;
   min-height: 8vh;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: stretch;
 }
@@ -100,10 +111,16 @@ main h1 {
   padding-top: 1em;
 }
 
+@media (min-width: 700px) {
+
+  .project-section img {
+    float: left;
+  }
+}
+
 .project-section img {
-  float: left;
   object-fit: contain;
-  width: 10em;
+  width: 15rem;
   margin: 0 0.5em 0 0;
   border-radius: 1em;
 }
