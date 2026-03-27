@@ -19,10 +19,15 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   color: white;
+  font-size: x-large;
+}
+
+a {
+  color: #AD0079;
 }
 
 main {
-  background-color: rgba(10, 0, 10, 0.7);
+  background-color: rgba(10, 0, 10, 0.85);
   flex-grow: 100;
   padding: 1em;
 }
