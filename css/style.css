@@ -91,7 +91,7 @@ main h1 {
   margin: 2em 0 1em 2em;
 }
 
-.project-section a {
+.project-section .project-link {
   font-size: medium;
   display: block;
 }
