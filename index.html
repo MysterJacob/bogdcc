@@ -24,14 +24,12 @@
     <h1 id="whoami">Hi!</h1>
     <p>I'm Jakub, Computer Science student at AGH University of Technology in Kraków.</p>
     <p>I mostly do low-level programming in c, electronics and sometimes robotics.</p>
-    <p>I love creating new thing from scratch, either in team or alone;</p>
-    <p>Designing the system from high-level logic, thought communication protocols to servos controlling robotic arms.
-    </p>
-    <p>In my free time, I actively participate in the activities of <a target="_blank"
-        href="https://aiota.agh.edu.pl/">AIoTA</a>
-      science club.</p>
-    <p style="font-size: small">I also do archery in meantime :)</p>
-
+    <p>I enjoy designing solutions end‑to‑end: from high‑level system architecture, through communication protocols,
+      down to servo‑level control of robotic mechanisms. I thrive both in independent projects and in collaborative
+      engineering environments.</p>
+    <p>In my free time, I am an active member of the <a target="_blank" href="https://aiota.agh.edu.pl/">AIoTA</a>
+      scientific club, where I participate in embedded and
+      IoT‑focused research and development initiatives. Outside of technology, I also practice archery.</p>
     <h1 id="myprojects">my projects</h1>
 
     <div class="project-section">
@@ -62,11 +60,13 @@
         <img src="/img/8bitcomputer.jpg">
         <div class="project-text-wrapper">
           <p>My adaptation of <a href="https://www.youtube.com/@BenEater">Ben Eater's</a> 8Bit breadboard computer.</p>
-          <p>It was heav modified. Program is read from rom of capacity of 8KiB instead of 64 byte long RAM.
-            Each instruction might have a parameter, so there is no need to allocate RAM memory. You can do LVA 0xFF
-            (register A, load value 0xFF) instead of loading it manually into RAM and reading it from there.</p>
-          <p>I've made a custom compiler, so writing programs is much easier.</p>
-          <p>There is also buzzer, user input buttons etc.</p>
+          <p>I created a heavily modified adaptation of the Ben Eater 8‑bit breadboard computer. The major enhancements
+            include:
+            8 KiB ROM program memory instead of a 64‑byte RAM program area
+            Instruction parameters, eliminating the need to store immediate values in RAM
+            e.g., LVA 0xFF directly loads 0xFF into register A
+            A custom compiler to simplify writing and assembling programs
+            Additional components such as a buzzer, user‑input buttons, and other interface elements</p>
         </div>
       </div>
     </div>
@@ -83,16 +83,23 @@
       </div>
     </div>
 
-    <!--
     <div class="project-section">
       <h2>Home Core</h2>
+      <p class="project-link" style="font-size: small">Source code is not currently public.</p>
       <div class="project-section-wrapper">
-        <img src="/img/what.jpg">
+
+        <img src="/img/home_core.jpg">
+
         <div class="project-text-wrapper">
+          <p>Home Core manages automation, cameras and security alerts. It's not a single device, more like network of
+            connected nodes with central server on Raspberry PI. When sensor detect access to protected area without
+            authorization central server can send a warning to admin's mobile phone. If camera are installed in
+            location, photo or video of intruder can also be send.</p>
+          <p>With multiple access points system can be controlled from any point.</p>
+          <p>All of Home Core systems are modular and can be managed independent</p>
         </div>
       </div>
     </div>
-      --!>
 
     <div class="project-section">
       <h2>FiraCup</h2>
